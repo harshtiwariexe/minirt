@@ -1,0 +1,98 @@
+# ---------- Build output ----------
+build/
+build-*/
+cmake-build-*/
+out/
+bin/
+lib/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# ---------- CUDA intermediates ----------
+*.o
+*.obj
+*.a
+*.so
+*.so.*
+*.dylib
+*.exe
+*.ptx
+*.cubin
+*.fatbin
+*.ii
+*.cudafe1.*
+*.module_id
+*.reg.c
+*.stub.c
+*.ltoir
+
+# ---------- Profiler output (large, regenerate locally) ----------
+*.nsys-rep
+*.qdrep
+*.sqlite
+*.ncu-rep
+*.ncu-cache
+*.nvvp
+*.nvprof
+
+# ---------- Models, weights, datasets (never commit; scripts/ regenerates) ----------
+data/
+datasets/
+weights/
+checkpoints/
+*.bin
+*.pt
+*.pth
+*.onnx
+*.engine
+*.plan
+*.trt
+*.safetensors
+*.npy
+*.npz
+
+# ---------- Benchmark raw output (keep summary tables in docs/ instead) ----------
+bench/results/
+*.csv.tmp
+
+# ---------- Python ----------
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+.mypy_cache/
+.ruff_cache/
+
+# ---------- IDEs and editors ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.vs/
+*.code-workspace
+.cache/
+.clangd/
+
+# ---------- OS files ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- Logs and temp ----------
+*.log
+*.tmp
+core.*
+vgcore.*
+
+# ---------- Keep these even though patterns above might match ----------
+!docs/images/
+!docs/images/**
+!scripts/requirements.txt
