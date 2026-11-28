@@ -1,0 +1,74 @@
+
+BasedOnStyle: LLVM
+
+Language: Cpp
+Standard: c++17
+
+# Indentation
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+ContinuationIndentWidth: 4
+IndentCaseLabels: false
+IndentAccessModifiers: false
+
+# Line width
+ColumnLimit: 100
+MaxEmptyLinesToKeep: 1
+
+# Braces
+BreakBeforeBraces: Attach
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AllowShortBlocksOnASingleLine: Never
+
+# Pointers and references
+PointerAlignment: Left
+ReferenceAlignment: Left
+DerivePointerAlignment: false
+
+# Spacing
+SpaceBeforeParens: ControlStatements
+SpaceInEmptyParentheses: false
+SpacesInParentheses: false
+SpacesInAngles: false
+SpaceAfterCStyleCast: false
+
+# Includes
+SortIncludes: CaseSensitive
+IncludeBlocks: Regroup
+
+# C++ formatting
+NamespaceIndentation: None
+AccessModifierOffset: -4
+BreakConstructorInitializers: BeforeComma
+ConstructorInitializerIndentWidth: 4
+PackConstructorInitializers: Never
+BreakInheritanceList: BeforeColon
+
+# Templates and expressions
+BinPackArguments: false
+BinPackParameters: false
+AllowAllArgumentsOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: true
+
+# Comments
+ReflowComments: true
+AlignTrailingComments:
+  Kind: Always
+SpacesBeforeTrailingComments: 2
+
+# Alignment
+AlignAfterOpenBracket: Align
+AlignOperands: Align
+AlignConsecutiveAssignments:
+  Enabled: false
+AlignConsecutiveDeclarations:
+  Enabled: false
+
+# Miscellaneous
+Cpp11BracedListStyle: true
+InsertBraces: false
+DeriveLineEnding: true
+UseCRLF: false
